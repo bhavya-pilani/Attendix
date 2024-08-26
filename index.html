@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Verification System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Attendance Verification System</h1>
+
+    <form id="create-student-form">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" name="student-name"><br><br>
+        <label for="student-id">Student ID:(Etherium Address)</label>
+        <input type="text" id="student-id" name="student-id"><br><br>
+        <button type="submit">Create Student</button>
+    </form>
+
+    <form id="mark-attendance-form">
+        <label for="mark-attendance-student-id">Student ID:(Etherium Address)</label>
+        <input type="text" id="mark-attendance-student-id" name="mark-attendance-student-id"><br><br>
+        <label for="is-present">Is Present:</label>
+        <input type="checkbox" id="is-present" name="is-present"><br><br>
+        <button type="submit">Mark Attendance</button>
+    </form>
+
+    <div id="attendance-record"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
